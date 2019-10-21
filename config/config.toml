@@ -1,0 +1,27 @@
+[general]
+    secgroup = "secgroup1"
+    keypairname = "keypairec2mqtt"
+
+[mqtt]
+    ami = "ami-0fcfdac016bfcca80"
+    instancetype = "t2.micro"
+    IP = "3.10.14.1"
+
+[echosearch]
+    ami = "ami-0dab9be40e7aeceee"
+    instancetype = "t2.micro"
+    numberofinstances = 2
+
+[sqs]
+    inboxname = "TAP1-Inbox"
+    inboxvisibilitytimeout = "30"
+    outboxname = "TAP1-Outbox"
+    outboxvisibilitytimeout = "30"
+
+[webclient]
+    ami = "ami-0c84997143b931c9b"
+    instancetype = "t2.micro"
+    IP = "35.176.23.53"
+
+[s3]
+    bucketname = "tap1"
